@@ -8,7 +8,7 @@ terraform {
 }
 
 module "classify" {
-  source  = "github.com/fuzzylabs/terraform-google-cloud-function?ref=initial_commit"
+  source  = "github.com/fuzzylabs/terraform-google-cloud-function?ref=initial_branch"
 
   project = var.project
   name    = "classify"
