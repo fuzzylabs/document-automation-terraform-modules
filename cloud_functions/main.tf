@@ -17,4 +17,7 @@ module "classify" {
   source_archive_bucket = "${var.billing_org_id}_${var.customer}_${var.project_group}_${var.env}_cloud-functions"
   source_archive_object = "classify.zip"
   entry_point           = "classify"
+  roles = [
+    "roles/viewer",
+  ]
 }
