@@ -7,7 +7,7 @@ terraform {
   backend "gcs" {}
 }
 
-module "cloud_function" {
+module "circleci" {
   source   = "github.com/fuzzylabs/terraform-google-service-account?ref=master"
   location = var.location
   project  = var.project
