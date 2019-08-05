@@ -8,10 +8,10 @@ terraform {
 }
 
 module "circleci" {
-  source     = "github.com/fuzzylabs/terraform-google-service-account?ref=master"
-  location   = var.location
-  project_id = var.project
-  name       = "circleci"
+  source   = "github.com/fuzzylabs/terraform-google-service-account?ref=master"
+  location = var.location
+  project  = var.project
+  name     = "circleci"
   roles = [
     "roles/viewer",
     "roles/storage.objectAdmin"
