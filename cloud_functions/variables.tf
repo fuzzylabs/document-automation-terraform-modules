@@ -30,3 +30,8 @@ variable "env" {
   description = "The name of the environment (dev|qa|prod)"
   type        = string
 }
+
+variable "classify_zipfile" {
+  description = "The Classify Cloud Function Zipfile"
+  type        = string
+}

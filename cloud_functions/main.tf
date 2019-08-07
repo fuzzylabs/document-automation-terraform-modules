@@ -15,7 +15,7 @@ module "classify" {
   name                  = "classify"
   runtime               = "python37"
   source_archive_bucket = "${var.billing_org_id}_${var.customer}_${var.project_group}_${var.env}_cloud-functions"
-  source_archive_object = "classify.zip"
+  source_archive_object = "var.classify_zipfile"
   entry_point           = "classify"
   roles = [
     "roles/viewer",
