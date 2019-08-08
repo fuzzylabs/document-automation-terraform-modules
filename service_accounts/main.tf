@@ -14,6 +14,7 @@ module "circleci" {
   name     = "circleci"
   roles = [
     "roles/viewer",
-    "roles/storage.objectAdmin"
+    "roles/storage.objectAdmin",
+    "roles/iam.serviceAccountUser"
   ]
 }
