@@ -16,6 +16,7 @@ module "circleci" {
     "roles/viewer",
     "roles/storage.objectAdmin",
     "roles/cloudfunctions.admin",
+    "roles/run.admin"
     "roles/iam.serviceAccountUser"
   ]
 }
